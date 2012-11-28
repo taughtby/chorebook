@@ -1,0 +1,7 @@
+<%= form_for @chore, remote: true do |f| %>
+  <%= f.text_field :name, placeholder: "Chore description" %>
+  <%= f.number_field :points, placeholder: "Points", default: 50 %>
+  <%= f.text_field :due_date, placeholder: "Due Date"%>
+  <%= f.submit %>
+<% end %>
+

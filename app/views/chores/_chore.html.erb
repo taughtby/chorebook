@@ -1,0 +1,8 @@
+<%= form_for chore, remote: true do |f| %>
+  <%= f.check_box :complete %>
+  <%= f.submit "Update" %>
+  <%= f.label :complete, chore.name %>
+  <%= f.label :complete, chore.points %>
+  <%= f.label :complete, chore.due_date %>
+  <%= link_to "(remove)", chore, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
+<% end %>

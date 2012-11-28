@@ -1,0 +1,12 @@
+<h1>Chorebook</h1>
+
+<%= link_to "+ Chore", new_chore_path, id: "new_link", remote: true %>
+
+<div class="chore" id="incomplete_chores">
+  <%= render @incomplete_chores %>
+</div>
+
+
+<div class="chores" id="complete_chores">
+  <%= render @complete_chores %>
+</div>

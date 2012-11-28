@@ -1,0 +1,4 @@
+$('#new_chore').remove();
+$('#new_link').show();
+$('#incomplete_chores').append('<%= j render(@chore) %>');
+$('#edit_chore_<%= @chore.id %>').submitOnCheck();

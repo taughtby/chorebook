@@ -1,0 +1,5 @@
+<% if @chore.complete? %>
+  $('#edit_chore_<%= @chore.id %>').appendTo('#complete_chores');
+<% else %>
+  $('#edit_chore_<%= @chore.id %>').appendTo('#incomplete_chores');
+<% end %>
