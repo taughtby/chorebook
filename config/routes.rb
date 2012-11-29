@@ -1,6 +1,12 @@
 Chorebook::Application.routes.draw do
+  resources :children
+
+  get "splash/home"
+  get "splash/something"
+  root to: 'splash#home'
+
   resources :chores
-  root to: 'chores#index'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

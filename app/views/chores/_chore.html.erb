@@ -1,8 +1,21 @@
-<%= form_for chore, remote: true do |f| %>
-  <%= f.check_box :complete %>
-  <%= f.submit "Update" %>
-  <%= f.label :complete, chore.name %>
-  <%= f.label :complete, chore.points %>
-  <%= f.label :complete, chore.due_date %>
-  <%= link_to "(remove)", chore, method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
-<% end %>
+<div class="status">
+  <div class="row">
+			<div class="form_for_chore"> 
+				<%= form_for chore, remote: true do |f| %>
+				   <!-- <div class="span1"> -->
+	          <%= image_tag "Book-64.png" %>
+			     <!-- </div> -->
+			    <%= link_to 'Childs Name', "#" %>
+       
+				 <%= f.label :complete, chore.name %>
+				  <%= f.check_box :complete %>
+				  <%= f.submit "Update" %>
+				  <%= f.label :complete, chore.points %>
+				  <%# f.label :complete, chore.due_date %>
+				
+				  <%= link_to (image_tag "1353624772_delete.ico"), chore, method: :delete, data: {confirm: "Are you sure?"}, remote: true %> 
+
+				<% end %>  
+    </div> 
+  </div>
+</div>

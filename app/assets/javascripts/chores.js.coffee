@@ -9,6 +9,4 @@ jQuery.fn.submitOnCheck = ->
 jQuery ->
   $('.edit_chore').submitOnCheck()
 
-jQuery ->
-  $('#chore_due_date').datepicker
-    dateFormat: 'yy-mm-dd'
+
