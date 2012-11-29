@@ -1,29 +1,54 @@
-<h1>Listing children</h1>
+<h2>Children</h2>
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Image</th>
-    <th>Total points</th>
-    <th>Dob</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+  
 <% @children.each do |child| %>
-  <tr>
-    <td><%= child.name %></td>
-    <td><%= child.image %></td>
-    <td><%= child.total_points %></td>
-    <td><%= child.dob %></td>
-    <td><%= link_to 'Show', child %></td>
-    <td><%= link_to 'Edit', edit_child_path(child) %></td>
-    <td><%= link_to 'Destroy', child, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+	<div class="well">
+	  <%= image_tag child.image_url(:thumb) %>
+	  <%= child.name %> |
+	  <!-- <%= child.dob %> -->
+	  <%= child.total_points %> points
+	</div>
+  
 <% end %>
-</table>
 
-<br />
+<div class="well"><%= link_to '+ Child', new_child_path %>
+</div>
 
-<%= link_to 'New Child', new_child_path %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

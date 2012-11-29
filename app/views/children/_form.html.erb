@@ -17,17 +17,16 @@
   </div>
   <div class="field">
     <%= f.label :image %><br />
-    <%= f.text_field :image %>
+    <%= f.file_field :image %>
   </div>
-  <div class="field">
-    <%= f.label :total_points %><br />
-    <%= f.number_field :total_points %>
-  </div>
+
   <div class="field">
     <%= f.label :dob %><br />
-    <%= f.date_select :dob %>
+    <%= f.text_field :dob %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+

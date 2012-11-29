@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121128130523) do
+ActiveRecord::Schema.define(:version => 20121129210950) do
+
+  create_table "children", :force => true do |t|
+    t.string   "name"
+    t.string   "image"
+    t.integer  "total_points", :default => 0
+    t.date     "dob"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+  end
 
   create_table "chores", :force => true do |t|
     t.string   "name"
