@@ -1,4 +1,6 @@
 Chorebook::Application.routes.draw do
+  resources :rewards
+
   resources :children
 
   get "splash/home"

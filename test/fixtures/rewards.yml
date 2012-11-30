@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  image: MyString
+  is_rewarded: false
+  costs_points: 1
+  child_id: 1
+
+two:
+  description: MyString
+  image: MyString
+  is_rewarded: false
+  costs_points: 1
+  child_id: 1

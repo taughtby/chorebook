@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121129210950) do
+ActiveRecord::Schema.define(:version => 20121130033938) do
 
   create_table "children", :force => true do |t|
     t.string   "name"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(:version => 20121129210950) do
     t.date     "due_date"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "rewards", :force => true do |t|
+    t.string   "description"
+    t.string   "image"
+    t.boolean  "is_rewarded"
+    t.integer  "costs_points"
+    t.integer  "child_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end
