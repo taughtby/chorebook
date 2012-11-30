@@ -17,20 +17,24 @@
   </div>
   <div class="field">
     <%= f.label :image %><br />
-    <%= f.text_field :image %>
+    <%= f.file_field :image %>
   </div>
-  <div class="field">
-    <%= f.label :is_rewarded %><br />
-    <%= f.check_box :is_rewarded %>
-  </div>
+
+  <!-- <div class="field">
+      <%# f.label :is_rewarded %><br />
+      <%# f.check_box :is_rewarded %>
+    </div> -->
+
   <div class="field">
     <%= f.label :costs_points %><br />
     <%= f.number_field :costs_points %>
   </div>
-  <div class="field">
-    <%= f.label :child_id %><br />
-    <%= f.number_field :child_id %>
-  </div>
+
+  <!-- <div class="field">
+    <%# f.label :child_id %><br />
+    <%# f.number_field :child_id %>
+  </div> -->
+
   <div class="actions">
     <%= f.submit %>
   </div>
