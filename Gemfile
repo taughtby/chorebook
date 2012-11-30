@@ -10,6 +10,7 @@ gem 'jquery-ui-rails'
 gem 'sqlite3'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'devise'
 
 
 # Gems used only for assets and not required
